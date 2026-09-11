@@ -12,7 +12,7 @@ const links = [
   { label: "Services", href: "/services", mega: true },
   { label: "Work", href: "/work" },
   { label: "Projects", href: "/projects" },
-  { label: "Testimonials", href: "/testimonials" },
+  // { label: "Testimonials", href: "/testimonials" },
   { label: "Blog", href: "/blog" },
   { label: "Team", href: "/team" },
 ];
