@@ -22,7 +22,7 @@ export default function TeamPage() {
        image: "/team/mukaram.jpeg",
        location: "Abuja • Nigeria",
        bio: "Operations, delivery & client success. Ensures every launch scales without chaos.",
-       x: "#", linkedin: "#"
+       x: "#", linkedin: "https://www.linkedin.com/in/mukarram-abdullahi-b23b07281/"
      },
   ];
 
