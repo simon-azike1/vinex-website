@@ -60,7 +60,7 @@ export default function WorkPage() {
             <TiltCard key={c.name} className="group flex flex-col overflow-hidden rounded- border border-white/[0.06] bg-[#101011]">
               <a href={c.href} target="_blank" rel="noopener noreferrer" className="flex flex-col h-full">
                 <div className="relative h-48 md:h-64 overflow-hidden bg-[#0A0A0B]">
-                  <img src={c.image} alt={c.name === "Watermelon Hub" ? "Watermelon Hub B2B sales and support operations website" : c.name === "Mouad.Icap" ? "Mouad.Icap barber shop and grooming website" : "Mercel Life graphic and UI/UX designer portfolio website"} className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.05]" crossorigin="" />
+                  <img src={c.image} alt={c.name === "Watermelon Hub" ? "Watermelon Hub B2B sales and support operations website" : c.name === "Mouad.Icap" ? "Mouad.Icap barber shop and grooming website" : "Mercel Life graphic and UI/UX designer portfolio website"} className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.05]" crossOrigin="anonymous" />
                   <div className={`absolute inset-0 bg-gradient-to-br ${c.gradient} opacity-50 mix-blend-overlay`} />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 </div>
