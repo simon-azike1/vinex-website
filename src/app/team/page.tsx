@@ -6,7 +6,7 @@ export default function TeamPage() {
       image: "/team/sadiq.jpeg",
       location: "",
       bio: "Leads vision, partnerships & growth. Former VC scout, 12 products shipped in 18 months.",
-      x: "#", linkedin: "www.linkedin.com/in/sadiqwaru"
+      x: "#", linkedin: "https://www.linkedin.com/in/sadiqwaru"
     },
     {
       name: "Azike Simon",
