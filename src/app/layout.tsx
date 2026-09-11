@@ -3,6 +3,7 @@ import { Syne, Inter, JetBrains_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import AIChatbot from "@/components/AIChatbot";
 import RevealObserver from "@/components/RevealObserver";
 import "./globals.css";
 
@@ -41,6 +42,23 @@ export const metadata: Metadata = {
     title: "VNEX",
     description: "Websites and systems for businesses ready to be found online.",
     type: "website",
+    siteName: "VNEX",
+    images: [
+      {
+        url: "/icon.png",
+        width: 1200,
+        height: 630,
+        alt: "VNEX logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "VNEX",
+    description: "We help businesses without web presence get professional websites and digital systems built and launched in 3-6 weeks. Rabat • Paris • Remote.",
+    site: "vnex.tech",
+    creator: "vnex.tech",
+    images: ["/icon.png"],
   },
 };
 
@@ -54,6 +72,7 @@ export default function RootLayout({
           <Navbar />
           <main className="flex-1">{children}</main>
           <Footer />
+          <AIChatbot />
           <div className="noise" aria-hidden="true" />
           <RevealObserver />
         </ThemeProvider>

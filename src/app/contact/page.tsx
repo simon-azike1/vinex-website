@@ -2,7 +2,7 @@
 import { FadeUp } from "@/components/motion.utils";
 import MagneticButton from "@/components/ui/magnetic-button";
 import TiltCard from "@/components/ui/tilt-card";
-import { Mail, Phone, MapPin, Clock, Check } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, Check, LinkIcon } from "lucide-react";
 import { useState } from "react";
 
 export default function ContactPage() {
@@ -20,9 +20,12 @@ export default function ContactPage() {
             <h1 className="mt-6 font-syne text-[clamp(48px,8vw,112px)] font-[800] tracking-[-0.06em] leading-[0.85] text-[#F5F3EF]">
               Ready to start <span className="text-white/20">your project?</span>
             </h1>
-            <p className="mx-auto mt-6 max-w- text- leading-[1.6] text-white/40">
-              Tell us where things stand today — we&apos;ll tell you exactly what it takes to get online properly. Fixed price, you own 100%.
-            </p>
+<p className="mx-auto mt-6 max-w- text- leading-[1.6] text-white/40">
+               Tell us where things stand today — we&apos;ll tell you exactly what it takes to get online properly. Fixed price, you own 100%.
+             </p>
+             <p className="mx-auto mt-4 max-w- text- leading-[1.6] text-white/30">
+               You can also chat with our AI assistant for quick responses and initial guidance.
+             </p>
           </div>
         </FadeUp>
 
@@ -52,18 +55,18 @@ export default function ContactPage() {
                   <div className="grid gap-5 md:grid-cols-2">
                     <div>
                       <label className="font-mono text- uppercase tracking-[0.12em] text-white/30">Phone / WhatsApp</label>
-                      <input required type="tel" placeholder="+234 801 234 5678" className="mt-2 w-full rounded- border border-white/[0.08] bg-[#0A0A0B] px-4 py-3 text- text-white placeholder:text-white/20 focus:outline-none focus:border-[#8B5CF6]/50 focus:ring-2 focus:ring-[#8B5CF6]/20" />
+                      <input required type="tel" placeholder="+212 751-780853" className="mt-2 w-full rounded- border border-white/[0.08] bg-[#0A0A0B] px-4 py-3 text- text-white placeholder:text-white/20 focus:outline-none focus:border-[#8B5CF6]/50 focus:ring-2 focus:ring-[#8B5CF6]/20" />
                     </div>
-                    <div>
-                      <label className="font-mono text- uppercase tracking-[0.12em] text-white/30">Service interest</label>
-                      <select defaultValue="" required className="mt-2 w-full rounded- border border-white/[0.08] bg-[#0A0A0B] px-4 py-3 text- text-white/70 focus:outline-none focus:border-[#8B5CF6]/50 focus:ring-2 focus:ring-[#8B5CF6]/20">
-                        <option value="" disabled className="text-white/30">Select a service</option>
-                        <option value="website-design">Website Design & Build</option>
-                        <option value="custom-builds">Custom Builds</option>
-                        <option value="digital-systems">Digital Systems</option>
-                        <option value="ongoing-support">Ongoing Support</option>
-                      </select>
-                    </div>
+<div>
+                       <label className="font-mono text- uppercase tracking-[0.12em] text-white/30">Service interest</label>
+                       <select defaultValue="" required className="mt-2 w-full rounded- border border-white/[0.08] bg-[#0A0A0B] px-4 py-3 text- text-white/70 focus:outline-none focus:border-[#8B5CF6]/50 focus:ring-2 focus:ring-[#8B5CF6]/20 relative z-10">
+                         <option value="" disabled className="text-white/30">Select a service</option>
+                         <option value="website-design">Website Design & Build</option>
+                         <option value="custom-builds">Custom Builds</option>
+                         <option value="digital-systems">Digital Systems</option>
+                         <option value="ongoing-support">Ongoing Support</option>
+                       </select>
+                     </div>
                   </div>
 
                   <div>
@@ -94,14 +97,16 @@ export default function ContactPage() {
             <TiltCard className="rounded- border border-white/[0.06] bg-[#101011] p-8">
               <p className="font-mono text- uppercase tracking-[0.16em] text-white/30">Contact info</p>
               <div className="mt-6 space-y-4">
-                <a href="mailto:hello@vnex.co" className="flex items-center gap-3 text- text-white/70 hover:text-white"><div className="grid h-9 w-9 place-items-center rounded-full bg-white/[0.04] border border-white/[0.06]"><Mail className="h-4 w-4" /></div> hello@vnex.co</a>
-                <a href="tel:+212600000000" className="flex items-center gap-3 text- text-white/70 hover:text-white"><div className="grid h-9 w-9 place-items-center rounded-full bg-white/[0.04] border border-white/[0.06]"><Phone className="h-4 w-4" /></div> +212 6 00 00 00 00 / +234 XXX</a>
-                <div className="flex items-center gap-3 text- text-white/40"><div className="grid h-9 w-9 place-items-center rounded-full bg-white/[0.04] border border-white/[0.06]"><MapPin className="h-4 w-4" /></div> Rabat, Morocco — Lagos, Nigeria — Remote</div>
-                <div className="flex items-center gap-3 text- text-white/40"><div className="grid h-9 w-9 place-items-center rounded-full bg-white/[0.04] border border-white/[0.06]"><Clock className="h-4 w-4" /></div> Mon—Fri, 9am—6pm GMT+1</div>
+                <a href="mailto:vnex@gmail.com" className="flex items-center gap-3 text- text-white/70 hover:text-white"><div className="grid h-9 w-9 place-items-center rounded-full bg-white/[0.04] border border-white/[0.06]"><Mail className="h-4 w-4" /></div>vnex@gmail.com</a>
+                <a href="https://wa.me/212751780853" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text- text-white/70 hover:text-white"><div className="grid h-9 w-9 place-items-center rounded-full bg-white/[0.04] border border-white/[0.06]"><Phone className="h-4 w-4" /></div> +212 751-780853</a>
+                <a href="https://www.linkedin.com/in/vnex-solution-3560b3348/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text- text-white/70 hover:text-white"><LinkIcon className="h-4 w-4" /> LinkedIn</a>
+                <a href="https://www.instagram.com/vnex.tech" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text- text-white/70 hover:text-white"><span className="text-sm">IG</span> Instagram</a>
+                <div className="flex items-center gap-3 text- text-white/40"><div className="grid h-9 w-9 place-items-center rounded-full bg-white/[0.04] border border-white/[0.06]"><MapPin className="h-4 w-4" /></div> Rabat, Morocco {<br/>}Lagos, Nigeria; Remote</div>
+                <div className="flex items-center gap-3 text- text-white/40"><div className="grid h-9 w-9 place-items-center rounded-full bg-white/[0.04] border border-white/[0.06]"><Clock className="h-4 w-4" /></div> Mon—Fri {<br/>} 9am—6pm GMT+1</div>
               </div>
             </TiltCard>
 
-            <TiltCard className="rounded- border border-[#8B5CF6]/20 bg-[#101011] p-8">
+            <TiltCard className="rounded- border border-[8B5CF6]/20 bg-[#101011] p-8">
               <p className="font-mono text- uppercase tracking-[0.16em] text-[#8B5CF6]">What happens next</p>
               <div className="mt-6 space-y-5">
                 {[
@@ -110,7 +115,7 @@ export default function ContactPage() {
                   { n: "03", t: "We propose", d: "Fixed price, timeline, what you own. You decide." },
                 ].map((s) => (
                   <div key={s.n} className="flex gap-4">
-                    <div className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-[#8B5CF6]/15 text- font-bold text-[#8B5CF6] border border-[#8B5CF6]/20">{s.n}</div>
+                    <div className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-[8B5CF6]/15 text- font-bold text-[8B5CF6] border border-[8B5CF6]/20">{s.n}</div>
                     <div><div className="text- font-semibold text-white">{s.t}</div><div className="text- text-white/40">{s.d}</div></div>
                   </div>
                 ))}

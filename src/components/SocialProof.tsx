@@ -74,10 +74,7 @@ export default function SocialProof() {
           </div>
         </div>
 
-        {/* Replace note for you - remove in prod */}
-        <div className="mx-auto mt-12 max-w-xl rounded-full border border-dashed border-amber-500/20 bg-amber-500/5 px-4 py-2 text-center text- text-amber-200/60">
-          Swap text in SocialProof.tsx when real client quote arrives — layout is ready
-        </div>
+
       </div>
     </section>
   );

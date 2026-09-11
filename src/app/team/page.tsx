@@ -6,7 +6,7 @@ export default function TeamPage() {
       image: "/team/sadiq.jpeg",
       location: "",
       bio: "Leads vision, partnerships & growth. Former VC scout, 12 products shipped in 18 months.",
-      x: "#", linkedin: "https://www.linkedin.com/in/sadiqwaru"
+      x: "+212 647-574605", linkedin: "https://www.linkedin.com/in/sadiqwaru"
     },
     {
       name: "Azike Simon",
@@ -14,7 +14,7 @@ export default function TeamPage() {
       image: "/team/simon.PNG",
       location: "",
       bio: "Owns product & engineering. Next.js, automations, infra — from 0 → revenue in 3-6 weeks.",
-      x: "https://x.com/azikeshinye", linkedin: "https://www.linkedin.com/in/simonzik/"
+      x: "", linkedin: "https://www.linkedin.com/in/simonzik/"
     },
 {
        name: "Muhammad Mukaram Abdullahi",

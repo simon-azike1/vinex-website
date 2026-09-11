@@ -11,10 +11,10 @@ const links = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services", mega: true },
   { label: "Work", href: "/work" },
-  { label: "Projects", href: "/projects" },
   // { label: "Testimonials", href: "/testimonials" },
   { label: "Blog", href: "/blog" },
   { label: "Team", href: "/team" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const servicesMega = [

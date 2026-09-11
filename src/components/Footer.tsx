@@ -1,5 +1,7 @@
 "use client";
 
+import { Mail, Phone, ExternalLink } from "lucide-react";
+
 export default function Footer() {
   const year = new Date().getFullYear();
 
@@ -20,8 +22,8 @@ export default function Footer() {
             <a href="/contact" className="rounded-full bg-nexus-bg-secondary px-6 py-3 text- font-semibold text-foreground hover:bg-nexus-bg-secondary transition-colors">
               Start a project →
             </a>
-            <a href="mailto:hello@vnex.co" className="rounded-full border border-nexus-border bg-foreground/[0.04] px-6 py-3 text- font-medium text-nexus-text-secondary hover:text-foreground hover:bg-foreground/[0.04] transition-colors">
-              hello@vnex.co
+            <a href="mailto:vnex@gmail.com" className="rounded-full border border-nexus-border bg-foreground/[0.04] px-6 py-3 text- font-medium text-nexus-text-secondary hover:text-foreground hover:bg-foreground/[0.04] transition-colors">
+              venex@gmail.com
             </a>
           </div>
         </div>
@@ -58,9 +60,31 @@ export default function Footer() {
           <div className="md:col-span-2">
             <p className="font-mono text- uppercase tracking-[0.16em] text-nexus-text-muted">Contact</p>
             <ul className="mt-4 space-y-3">
-              <li><a href="/contact" className="text- text-nexus-text-secondary hover:text-foreground">Start a project</a></li>
-              <li><a href="mailto:hello@vnex.co" className="text- text-nexus-text-muted hover:text-foreground">hello@vnex.co</a></li>
-              <li><a href="tel:+212XXXXXXXXX" className="text- text-nexus-text-muted hover:text-nexus-text-secondary">+212 6 XX XX XX XX</a></li>
+              <li>
+                <a href="/contact" className="flex items-center gap-3 text- text-nexus-text-secondary hover:text-foreground">
+                  <span className="text-xs">→</span> Start a project
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/vnex-solution-3560b3348/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text- text-nexus-text-muted hover:text-foreground">
+                  <Mail className="h-4 w-4" /> venex@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/212751780853" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text- text-nexus-text-muted hover:text-foreground">
+                  <Phone className="h-4 w-4" /> +212 751-780853
+                </a>
+              </li>
+<li>
+                 <a href="https://www.linkedin.com/in/vnex-solution-3560b3348/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text- text-nexus-text-muted hover:text-foreground">
+                   <ExternalLink className="h-4 w-4" /> LinkedIn
+                 </a>
+               </li>
+               <li>
+                 <a href="https://www.instagram.com/vnex.tech" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text- text-nexus-text-muted hover:text-foreground">
+                   <ExternalLink className="h-4 w-4" /> Instagram
+                 </a>
+               </li>
             </ul>
           </div>
 
