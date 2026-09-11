@@ -59,8 +59,8 @@ export default function TeamPage() {
                   <div className="rounded-full bg-black/60 backdrop-blur-md border border-white/10 px-3 py-1 text- font-medium text-white/80">{m.location}</div>
                 </div>
                 <div className="absolute bottom-4 right-4 flex gap-2">
-                  <a href={m.x} className="grid h-9 w-9 place-items-center rounded-full bg-white/90 text- font-bold text-black backdrop-blur transition hover:bg-white">𝕏</a>
-                  <a href={m.linkedin} className="grid h-9 w-9 place-items-center rounded-full bg-white/10 text- font-bold text-white backdrop-blur border border-white/10 transition hover:bg-white hover:text-black">in</a>
+                  <a href={m.x} className="grid h-9 w-9 place-items-center rounded-full bg-white/90 text- font-bold text-black backdrop-blur transition hover:bg-white" target="_blank">𝕏</a>
+                  <a href={m.linkedin} className="grid h-9 w-9 place-items-center rounded-full bg-white/10 text- font-bold text-white backdrop-blur border border-white/10 transition hover:bg-white hover:text-black" target="_blank">in</a>
                 </div>
               </div>
 
